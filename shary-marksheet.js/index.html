@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <link rel="stylesheet"  href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    
+        <div class="inputs">
+
+    <label for="yname">First Name</label>
+    <input type="text" id="yname"><br/>
+
+    <label for="eyear">Exam Year</label>
+    <input type="text" id="eyear"><br/>
+
+    <label for="date">DOB</label>
+    <input type="text" id="date"><br/>
+
+    <label for="rno">Roll No.</label>
+    <input type="text" id="rno"><br/>
+
+    <label for="sin">Sindhi Marks</label>
+    <input type="text" id="sin"><br/>
+    <label for="urdui">urdu Marks</label>
+    <input type="text" id="urdui"><br/>
+    <label for="eng1">English paper 1 Marks</label>
+    <input type="text" id="eng1"><br/>
+    <label for="eng2">English paper 2 Marks</label>
+    <input type="text" id="eng2"><br/>
+    <label for="pak">PST Marks</label>
+    <input type="text" id="pak"><br/>
+    <label for="cs">Computer Marks</label>
+    <input type="text" id="cs"><br/>
+    <label for="chem">Chemistry Marks</label>
+    <input type="text" id="chem"><br/>
+    <label for="isl">Islamiat Marks</label>
+    <input type="text" id="isl"><br/>
+    <label for="maths">Maths Marks</label>
+    <input type="text" id="maths"><br/>
+    <label for="phy">Physics Marks</label>
+    <input type="text" id="phy"><br/>
+
+
+    
+    <button id="sub" onClick="gen()">Generate Sheet</button>
+</div>
+
+
+
+
+    <div class="mark">
+        <div class="top">
+            <div class="header">
+
+                <div>SERIAL NO. <br> <h3>123321</h3></div>
+                <div id="heading1"><h1>Board of Secondary Education Karachi</h1>STATEMENT OF MARKS <br> <b>S.S.C Examination</b><hr><h2 id="heading2">SCIENCE GROUP</h2></div>
+                <div>A85AC</div>
+    
+            </div>
+        </div>
+
+        <div class="mid">
+
+            <div class="name">
+                <table class="namo">
+
+                    <tr>
+                        <td ><b>EXAMINATION</b></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="year"><b>20xx</b></td>
+                        <td ><b>ROLL NUMBER</b></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="rollno"><b>45456</b></td>
+                    </tr>
+
+                    <tr>
+                        <td><b>NAME</b></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="sname"><b>Shaarif</b></td>
+                        <td ></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><b> FATHER'S NAME</b></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="fname">M.Asim</td>
+                        <td ></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><b>DATE OF BIRTH</b></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="dob"><b>8 OCT</b></td>
+                        <td ></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+
+                </table>
+                <hr>
+            </div>
+
+            <div class="subs">
+
+                <table border="1px" style="margin: 10px;" class="crs">
+
+                    <tr>
+                        <td rowspan="2">S.NO</td>
+                        <td colspan="6" rowspan="2" >Subjects</td>
+                        <td colspan="2">Max. Marks</td>
+                        <td colspan="2">Min .Marks</td>
+                        <td colspan="4">OBTAINED MARKS</td>
+                        <td rowspan="2" colspan="3">REMARKS</td>
+                        
+
+                    </tr>
+
+                    <tr>
+                        <td>TH</td>
+                        <td>PR</td>
+                        <td>TH</td>
+                        <td>PR</td>
+                        <td>TH</td>
+                        <td>PR</td>
+                        <td colspan="2">TOTAL</td>
+                    </tr>
+
+                    <tr>
+                        <td>01</td>
+                        <td colspan="6">SINDHI SALEES</td>
+                        <td>75</td>
+                        <td>_</td>
+                        <td>25</td>
+                        <td>_</td>
+                        <td id="sindh">_</td>
+                        <td>_</td>
+                        <td colspan="2" id="sindh2"></td>
+                        <td colspan="3" rowspan="10"></td>
+                    </tr>
+                    
+
+                    <tr>
+                        <td>02</td>
+                        <td colspan="6">URDU NORMAL </td>
+                        <td>75</td>
+                        <td>__</td>
+                        <td>25</td>
+                        <td>__</td>
+                        <td id="urdumarks">_</td>
+                        <td>__</td>
+                        <td colspan="2" id="urdumarks2"></td>
+                        <!-- <td colspan="3"></td> -->
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td colspan="6">ENGLISH PAPER I</td>
+                        <td>75</td>
+                        <td>__</td>
+                        <td>25</td>
+                        <td>__</td>
+                        <td id="english"></td>
+                        <td>__</td>
+                        <td colspan="2" id="englishmarks2"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td colspan="6">ENGLISH PAPER II</td>
+                        <td>75</td>
+                        <td>__</td>
+                        <td>25</td>
+                        <td>__</td>
+                        <td id="englishII"></td>
+                        <td>__</td>
+                        <td colspan="2" id="englishIImarks2"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td colspan="6">PAKISTAN STUDIES</td>
+                        <td>75</td>
+                        <td>__</td>
+                        <td>25</td>
+                        <td>__</td>
+                        <td id="pst"></td>
+                        <td>__</td>
+                        <td colspan="2" id="pstmarks2"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td colspan="6">COMPUTER STUDIES</td>
+                        <td>75</td>
+                        <td>25</td>
+                        <td>25</td>
+                        <td>08</td>
+                        <td id="computermarks"></td>
+                        <td id="computerpracmarks"></td>
+                        <td colspan="2" id="comptotalmarks"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>07</td>
+                        <td colspan="6">CHEMISTRY</td>
+                        <td>85</td>
+                        <td>15</td>
+                        <td>28</td>
+                        <td>05</td>
+                        <td id="chemistrymarks"></td>
+                        <td id="chemistrypracmarks"></td>
+                        <td colspan="2" id="chemtotalmarks"></td>
+                        
+                    </tr>
+                     <tr>
+                        <td>08</td>
+                        <td colspan="6">ISLAMIAT</td>
+                        <td>75</td>
+                        <td>__</td>
+                        <td>25</td>
+                        <td>__</td>
+                        <td id="islmarks"></td>
+                        <td>__</td>
+                        <td colspan="2" id="islmarks2"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>09</td>
+                        <td colspan="6">MATHEMATICS</td>
+                        <td>100</td>
+                        <td>__</td>
+                        <td>33</td>
+                        <td>__</td>
+                        <td id="mathsmarks"></td>
+                        <td>__</td>
+                        <td colspan="2" id="mathsmarks2"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td colspan="6">PHYSICS</td>
+                        <td>85</td>
+                        <td>15</td>
+                        <td>28</td>
+                        <td>05</td>
+                        <td id="physicsmarks"></td>
+                        <td id="physicspracmarks"></td>
+                        <td colspan="2" id="phytotalmarks"></td>
+                        
+                    </tr>
+
+
+
+
+
+
+                    
+
+
+
+                </table>
+                <hr>
+
+                
+
+            </div>
+            <div class="grade">
+                <div class="grade1">GRAND TOTAL</div>
+                <div class="grade2" id="TotalMarks"></div>
+                <div class="grade3">GRADE</div>
+                <div class="grade4" id="gradeyouget"></div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
